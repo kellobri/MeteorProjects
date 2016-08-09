@@ -16,8 +16,9 @@ export default class RoutesConfig extends Config {
           }
         }
       });
+
     this.$urlRouterProvider.otherwise('tab/chats');
   }
 }
 
-RoutsConfig.$inject = ['$stateProvider', '$urlRouteProvider'];
+RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
